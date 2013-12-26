@@ -1,5 +1,5 @@
 {
-	"name": "atomita/loader-of-less-than-PHP5.3-plugin",
+	"name": "atomita/loader-of-less-than-php5.3-plugin",
 	"description": "",
 	"type": "composer-plugin",
 	"keywords": ["plugins", "less than PHP5.3"],
