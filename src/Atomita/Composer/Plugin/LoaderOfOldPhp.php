@@ -1,6 +1,6 @@
 <?php
 
-namespace \Atomita\Composer\Plugin;
+namespace Atomita\Composer\Plugin;
 
 use Composer\Composer;	
 use Composer\EventDispatcher\EventSubscriberInterface;
