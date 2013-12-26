@@ -1,0 +1,25 @@
+{
+	"name": "atomita/loader-of-less-than-PHP5.3-plugin",
+	"description": "",
+	"type": "composer-plugin",
+	"keywords": ["plugins", "less than PHP5.3"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "atomita"
+		}
+	],
+	"version": "0.0.1",
+	"require": {
+		"composer-plugin-api": "*"
+	},
+	"require-dev": {
+		"composer/composer": "1.*"
+	},
+	"autoload": {
+		"psr-0": {"Atomita": ["src/"]}
+	},
+	"extra": {
+		"class": "\\Atomita\\Composer\\Plugin\\LoaderOfOldPhp"
+	}
+}
