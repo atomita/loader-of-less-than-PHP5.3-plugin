@@ -16,6 +16,9 @@
 	"require-dev": {
 		"composer/composer": "1.*"
 	},
+	"autoload": {
+		"psr-0": {"Atomita": ["src/"]}
+	},
 	"extra": {
 		"class": "\\Atomita\\Composer\\Plugin\\LoaderOfOldPhp"
 	}
