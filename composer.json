@@ -17,8 +17,7 @@
 		"composer/composer": "1.*"
 	},
 	"autoload": {
-		"psr-0": {"Atomita": ["src/"]},
-                "files": ["src/autoload-wrapper.php"]
+		"psr-0": {"Atomita": ["src/"]}
 	},
 	"extra": {
 		"class": "\\Atomita\\Composer\\Plugin\\LoaderOfOldPhp"
