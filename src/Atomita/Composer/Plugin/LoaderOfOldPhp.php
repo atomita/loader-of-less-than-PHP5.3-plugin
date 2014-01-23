@@ -40,7 +40,7 @@ class LoaderOfOldPhp implements PluginInterface, EventSubscriberInterface {
 		$file = $vendorPath . DIRECTORY_SEPARATOR . 'autoload.php';
 		if (file_exists($file)) {
 			$content = explode('<?php', file_get_contents($file), 2);
-			$content = end($content);
+			$content = str_replace('__DIR__', 'dirname(__FILE__)', end($content));
 			$append	 = <<<EOD
 <?php
 
