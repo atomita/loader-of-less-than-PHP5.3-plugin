@@ -3,7 +3,7 @@
 	"description": "",
 	"type": "composer-plugin",
 	"keywords": ["plugins", "less than PHP5.3"],
-	"license": "MIT",
+	"license": "LGPLv3",
 	"authors": [
 		{
 			"name": "atomita"
