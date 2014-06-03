@@ -56,6 +56,7 @@ EOD;
 				switch (true) {
 					case $this->endsWith(DIRECTORY_SEPARATOR . 'ClassLoader.php', $path):
 						$content = str_replace('namespace Composer\\Autoload;', '// namespace Composer\\Autoload;', $content);
+						$content = str_replace('\\InvalidArgumentException', 'InvalidArgumentException;', $content);
 						break;
 					case $this->endsWith(DIRECTORY_SEPARATOR . 'autoload_real.php', $path):
 						$content = str_replace('\'Composer\\Autoload\\ClassLoader\'', '\'ClassLoader\'', $content);
