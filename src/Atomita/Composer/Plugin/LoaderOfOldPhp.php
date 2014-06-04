@@ -62,7 +62,7 @@ EOD;
 					case $this->endsWith(DIRECTORY_SEPARATOR . 'autoload_real.php', $path):
 						$content = str_replace('\'Composer\\Autoload\\ClassLoader\'', '\'ClassLoader\'', $content);
 						$content = str_replace('\\Composer\\Autoload\\ClassLoader', 'ClassLoader', $content);
-						$content = preg_replace('/spl_autoload_register(array(\'([^\']+)\', \'loadClassLoader\'), true, true);/', 'spl_autoload_register(array(\'${1}\', \'loadClassLoader\'));', $content);
+						$content = preg_replace('/spl_autoload_register\(array\(\'([^\']*?)\', \'loadClassLoader\'\), true, true\);/', 'spl_autoload_register(array(\'${1}\', \'loadClassLoader\'));', $content);
 					default:
 						$content = str_replace('__DIR__', 'dirname(__FILE__)', $content);
 						break;
